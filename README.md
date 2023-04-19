@@ -4,7 +4,7 @@ Deep learning explaination for covid 19 model using CovidNet and Grad-cam.
 ## Brief Summary
 Created a series of experiments and tested ipynb file in order to find a way to explain the covid net model visually, and finally used IOU and robust value to get the result of the explanation of the covid-net model numerically.
 
-- 1covid19model_ex_gradcam.ipynb
+- .\experiments\1covid19model_ex_gradcam.ipynb
 
 In this file, I test for the grad-cam XAL tool successfully to produce some explanation;
 
@@ -14,7 +14,7 @@ Tested grad-cam in different covid-net models(CXR-2, CXR-3, CXR-large);
 
 Tested grad-cam with the different final layers.
 
-- 2grad_cam_covid19.ipynb
+- .\experiments\2grad_cam_covid19.ipynb
 
 Make the progress done within 1covid19model_ex_gradcam.ipynb file into a method, tooling them;
 
@@ -22,7 +22,7 @@ Use the tooled method to test four different images and compare the results;
 
 Test the whole method through a loop to test more images.
 
-- 3_recognize_lung&gradcam.ipynb
+- .\experiments\3_recognize_lung&gradcam.ipynb
 
 Testing and evaluating the result cam images got from grad-cam explanation;
 
@@ -36,7 +36,7 @@ Changing the cam result into black and white style by checking the red color on 
 
 Compare the lung area and cam result using plot img.
 
-- 4_experiment_lung_rectangle.ipynb
+- .\experiments\4_experiment_lung_rectangle.ipynb
 
 Show a lung rectangle to capture the lung area using a rectangle;
 
@@ -48,19 +48,19 @@ Recognize grad-cam area automatically and re-rectangle it;
 
 Put the whole process together to calculate the IOU of one explanation roughly within one step.
 
-- 5_experiement_whole_method.ipynb
+- .\experiments\5_experiement_whole_method.ipynb
 
 Continued with the whole method process and create a method to use it easily, tooled it;
 
 Changed a little bit of the bounding box value for the lung and get a rough IOU result here for the view.
 
-- 6_update_lung_recognize.ipynb
+- .\experiments\6_update_lung_recognize.ipynb
 
 Using the method created in 5_experiement_whole_method.ipynb file and test the images in a loop;
 
 Looped 10 images and save the results (cam and IOU) into my google drive.
 
-- 7_robust.ipynb
+- .\experiments\7_robust.ipynb
 
 Did the robust test for the cam result, and get to the conclusion that after changing the part of the grad-cam explanation part(by removing the bonding box area), the result changed(initially the result was covid-19 but changed into pneumonia).
 
